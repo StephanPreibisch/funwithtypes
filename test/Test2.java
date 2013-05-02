@@ -9,7 +9,12 @@ import net.imglib3.type.try2.IntType;
 import net.imglib3.type.try2.Readable;
 import net.imglib3.type.try2.Writable;
 
-
+/**
+ * Test for net.imglib3.type.try2 
+ * 
+ * @author preibischs
+ *
+ */
 public class Test2 
 {
 	public static void main( String[] args )

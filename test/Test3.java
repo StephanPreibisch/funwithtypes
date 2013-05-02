@@ -7,6 +7,12 @@ import net.imglib3.type.try3.DoubleType;
 import net.imglib3.type.try3.IntType;
 import net.imglib3.type.try3.Readable;
 
+/**
+ * Test for net.imglib3.type.try3
+ * 
+ * @author preibischs
+ *
+ */
 public class Test3 
 {
 	public static void main( String[] args )
