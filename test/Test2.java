@@ -10,7 +10,7 @@ import net.imglib3.type.try2.Readable;
 import net.imglib3.type.try2.Writable;
 
 
-public class Test 
+public class Test2 
 {
 	public static void main( String[] args )
 	{
@@ -26,7 +26,7 @@ public class Test
 		Readable< IntType > i2 = i;
 		Writable< IntReadable< ? > > i3 = i;
 		
-		//test( i, i );
+		test( i, i );
 		
 		/*
 		IntSet i = null;
@@ -40,7 +40,7 @@ public class Test
 		i.set( br ); */
 	}
 	
-	public static < T extends Readable< T > & Writable< ? extends T > > void test( final T t1, final T t2)
+	public static < T extends Readable< T > & Writable< T > > void test( final T t1, final T t2)
 	{
 		t2.set( t1 );
 	}
