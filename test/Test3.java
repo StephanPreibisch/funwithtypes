@@ -35,6 +35,7 @@ public class Test3
 		test2( i, b );
 		test2( i, i );
 		test2( i, d ); // fail
+		test2( i, new Object() ); // fail
 	}
 	
 	public static < T extends Writable< ? super T > > void test1( T t1, T t2 )
