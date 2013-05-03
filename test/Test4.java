@@ -1,5 +1,11 @@
 package test;
 
+import net.imglib3.type.try4.ByteReadable;
+import net.imglib3.type.try4.Double;
+import net.imglib3.type.try4.DoubleReadable;
+import net.imglib3.type.try4.Int;
+import net.imglib3.type.try4.Byte;
+import net.imglib3.type.try4.IntReadable;
 import net.imglib3.type.try4.IntWritable;
 import net.imglib3.type.try4.Writable;
 import net.imglib3.type.try4.ByteType;
@@ -17,34 +23,18 @@ public class Test4
 {
 	public static void main( String[] args )
 	{
-		ByteType b = new ByteType();
-		IntType i = new IntType();
-		DoubleType d = new DoubleType();
+		DoubleReadable< Double > d = null;
+		DoubleReadable< Int > di = null;
+		DoubleReadable< Byte > db = null;
+		IntReadable< Int > i = null;		
+		IntReadable< Byte > ib = null;
+		ByteReadable< Byte > b = null;
 		
-		b.set( b );
+		d.get().getDouble();
+		i.get().getDouble();
+		i.get().getInt();
+		Int j = di.get();
 		
-		i.set( i );
-		i.set( b );
-		
-		d.set( i );
-		d.set( b );
-		d.set( d );
-		
-		test1( i, i );
-		
-		test2( i, b );
-		test2( i, i );
-		test2( i, d ); // fail
-		test2( i, new Object() ); // fail
 	}
 	
-	public static < T extends Writable< ? super T > > void test1( T t1, T t2 )
-	{
-		t1.set( t2 );
-	}
-	
-	public static < S,  T extends Writable< ? super S > > void test2( T t1, S t2 )
-	{
-		t1.set( t2 );
-	}
 }

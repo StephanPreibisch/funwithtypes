@@ -1,5 +1,6 @@
 package net.imglib3.type.try4;
 
-public interface Readable< R > {
-
+public interface Readable< R > 
+{
+	R get();
 }
