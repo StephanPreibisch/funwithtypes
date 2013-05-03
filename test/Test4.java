@@ -31,8 +31,11 @@ public class Test4
 		ByteReadable< Byte > b = null;
 		
 		d.get().getDouble();
+		di.get().getDouble();
+		db.get().getDouble();
 		i.get().getDouble();
 		i.get().getInt();
+		
 		Int j = di.get();
 		
 	}
