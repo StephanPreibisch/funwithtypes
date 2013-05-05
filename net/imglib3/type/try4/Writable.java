@@ -1,6 +1,7 @@
 package net.imglib3.type.try4;
 
-public interface Writable< R >
+
+public interface Writable< S extends Readable< ? > >
 {
-	void set( Readable< R > r );
+	void set( S r );
 }

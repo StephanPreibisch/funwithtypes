@@ -1,6 +1,6 @@
 package net.imglib3.type.try4;
 
-public interface IntWritable< R extends Int< Byte > > extends ByteWritable< R >
+public interface IntWritable< S extends IntReadable< ? > > extends ByteWritable< S >
 {
 	//void set( IntRead< ? > r );
 }
